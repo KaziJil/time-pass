@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="10dp"
+    android:layout_height="match_parent"
+    android:layout_margin="15dp"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:id="@+id/l_login_TV_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+
+        android:layout_marginTop="30dp"
+        android:textColor="@color/Colorblack"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lemail_layout_id"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/l_login_TV_id"
+        android:gravity="center"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/lemail_id"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="25dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:layout_gravity="center_vertical"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rpass_layout_id"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/lemail_layout_id"
+        android:gravity="center"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/lpass_id"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:padding="10dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:layout_gravity="center_vertical"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/l_loginbtn_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:background="@drawable/lr_button"
+        android:layout_below="@+id/rpass_layout_id"
+        android:text="Login"/>
+
+    <TextView
+        android:id="@+id/forget_pass_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Forget password ?Recover"
+        android:layout_below="@+id/l_loginbtn_id"
+        android:layout_marginTop="30dp"
+        android:padding="10dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"/>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/googleLoginbtn_id"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/forget_pass_id"
+        android:layout_margin="10dp"
+        android:padding="5dp">
+    </com.google.android.gms.common.SignInButton>
+
+
+    <TextView
+        android:id="@+id/notreg_acnt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Not have account? Register"
+       android:layout_alignParentBottom="true"
+        android:layout_marginBottom="40dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"/>
+
+
+
+
+</RelativeLayout>

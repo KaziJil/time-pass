@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterActivity">
+
+    <TextView
+        android:id="@+id/register_TV_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textAllCaps="false"
+        android:textSize="25sp"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/Colorblack"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/remail_layout_id"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/register_TV_id"
+        android:gravity="center"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/remail_id"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:inputType="textEmailAddress"
+            android:hint="Email"
+            android:layout_gravity="center_vertical"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rpass_layout_id"
+        android:layout_marginTop="15dp"
+        android:layout_below="@+id/remail_layout_id"
+        android:gravity="center"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:id="@+id/rpass_id"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:inputType="textPassword"
+            android:hint="Password"
+            android:layout_gravity="center_vertical"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/rregbtn_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/lr_button"
+        android:layout_below="@+id/rpass_layout_id"
+        android:text="Register"/>
+
+    <TextView
+        android:id="@+id/alredy_acnt_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="20sp"
+        android:text="Already hava an Account?"
+        android:layout_below="@+id/rregbtn_id"
+        android:layout_marginTop="30dp"
+        android:textAlignment="center"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimary"/>
+
+
+
+
+</RelativeLayout>
